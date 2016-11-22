@@ -8,6 +8,15 @@ md-card md-card-header {
     background: #1565C0;
 }
 
+#inner-container .md-chip {
+    height: 22px;
+    line-height: 22px;
+    font-size: 12px;
+    background: rgb(21, 101, 192);    
+    color: #fff;
+    font-family: sans-serif;
+}
+
 md-card-header-text > .md-title {
   color: #fff;
 }
