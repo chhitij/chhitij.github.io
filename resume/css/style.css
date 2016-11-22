@@ -1,0 +1,149 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+topbar {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  border-top: 1px solid #348daa;
+  z-index: 1;
+}
+
+body::-webkit-scrollbar {
+    width: 5px;
+}
+ 
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: #2EC4B6;
+  outline: 1px solid #f5f7f9;
+}
+
+/** colors */
+.yellow {
+  color: #ECA400
+}
+
+.blue{
+  color: #348daa;
+}
+
+.light-blue {
+  color: #f5f7f9;
+}
+
+.green, [star-rating] .glyphicon, a:hover {
+  color: #2EC4B6;
+}
+
+a, a:hover, a:visited, a:focus, a:active {
+  text-decoration: none;
+}
+
+[star-rating] {
+  position: absolute;
+  left: 40%;
+}
+
+
+/** spacing */
+.m-b-0 {
+  margin-bottom: 0;
+}
+
+/* bootstrap overrides*/
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* components */
+
+/* sidebar */
+sidebar {
+  display: flex;
+  height: 100%;
+  background-color: #f5f7f9;
+  border-right: 1px solid #2EC4B6;
+  position: fixed !important;
+}
+
+sidebar aside {
+  width: 100%;
+}
+
+/*sidebar .social-contact {
+  position: absolute;
+  width: 100%;
+  Bottom: 0;
+  left: 0;
+  padding: 0 15px 5px 15px;
+}*/
+
+/** profile **/
+profile {
+  padding: 0 5%;
+}
+
+profile projects {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+
+profile projects project {
+  border-left: 1px solid #34cdd3;
+  background: #f5f7f9;
+  margin: 10px 0;
+  padding-bottom: 10px;
+  border-radius: 2px;
+  -webkit-transition: box-shadow 2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -moz-transition: box-shadow 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: box-shadow 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+  box-sizing: content-box;
+  /*opacity: 0.01;*/
+  /*animation: swipe-in 2s ease-out forwards;*/
+  will-change: transform;
+}
+
+profile projects project h5 {
+  margin-bottom: 0;
+}
+
+profile projects project .PROJECTSPAN_CLASS {
+  line-height: 20px;
+}
+
+profile projects project:hover {
+  box-shadow: 2px 4px 20px 2px #dfdfdf;
+}
+
+
+/** animations */
+@-webkit-keyframes swipe-in {
+  from {
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 0.99;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes swipe-in {
+  from {
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
